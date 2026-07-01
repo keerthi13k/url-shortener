@@ -157,7 +157,7 @@ python pipeline/spark/analytics_processor.py
 
 ### 6. Start Airflow
 ```bash
-export AIRFLOW_HOME=/Users/keerthi/url-shortener/airflow ```set AIRFLOW_HOME to your project's airflow directory```
+export AIRFLOW_HOME=/Users/keerthi/url-shortener/airflow 
 airflow webserver --port 8080 &
 airflow scheduler &
 ```
