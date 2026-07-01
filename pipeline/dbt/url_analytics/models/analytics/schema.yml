@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: url_click_summary
+    description: "Summary of clicks per shortened URL"
+    columns:
+      - name: short_code
+        description: "The shortened URL code"
+        tests:
+          - not_null
+          - unique
+      - name: total_clicks
+        description: "Total number of clicks"
+        tests:
+          - not_null

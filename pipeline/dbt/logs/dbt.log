@@ -1,0 +1,73 @@
+[0m18:45:35.306904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106286e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106faefc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106faeae0>]}
+
+
+============================== 18:45:35.309691 | 295dc8bb-0c27-4fa9-b325-f88cfe1a1f62 ==============================
+[0m18:45:35.309691 [info ] [MainThread]: Running with dbt=1.11.7
+[0m18:45:35.310032 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '/Users/keerthi/.dbt', 'write_json': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'logs', 'introspect': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init url_analytics', 'version_check': 'True', 'target_path': 'None'}
+[0m18:45:35.318625 [info ] [MainThread]: Creating dbt configuration folder at /Users/keerthi/.dbt
+[0m18:45:35.319460 [debug] [MainThread]: Starter project path: /Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m18:45:35.322782 [info ] [MainThread]: 
+Your new dbt project "url_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:45:35.322962 [info ] [MainThread]: Setting up your profile.
+[0m18:47:05.664424 [error] [MainThread]: Encountered an error:
+
+[0m18:47:05.669030 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/click/termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/keerthi/url-shortener/venv/lib/python3.12/site-packages/click/termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:47:05.690008 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 90.420975, "process_in_blocks": "0", "process_kernel_time": 0.185199, "process_mem_max_rss": "112869376", "process_out_blocks": "0", "process_user_time": 0.744461}
+[0m18:47:05.690541 [debug] [MainThread]: Command `dbt init` failed at 18:47:05.690447 after 90.42 seconds
+[0m18:47:05.691249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c8ad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10702a720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107029790>]}
+[0m18:47:05.691619 [debug] [MainThread]: Flushing usage events
+[0m18:47:06.787053 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:47:29.813914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b088f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10974afc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10974aa80>]}
+
+
+============================== 18:47:29.816881 | ad8b32d4-eb60-4de4-9870-54e2834c270a ==============================
+[0m18:47:29.816881 [info ] [MainThread]: Running with dbt=1.11.7
+[0m18:47:29.817201 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error': 'None', 'debug': 'False', 'partial_parse': 'True', 'profiles_dir': '/Users/keerthi/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'quiet': 'False', 'printer_width': '80', 'fail_fast': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init url_analytics', 'empty': 'None', 'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'log_format': 'default'}
+[0m18:47:29.826246 [info ] [MainThread]: A project called url_analytics already exists here.
+[0m18:47:29.828384 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05346796, "process_in_blocks": "0", "process_kernel_time": 0.159753, "process_mem_max_rss": "115703808", "process_out_blocks": "0", "process_user_time": 0.672043}
+[0m18:47:29.828639 [debug] [MainThread]: Command `dbt init` succeeded at 18:47:29.828589 after 0.05 seconds
+[0m18:47:29.828813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10540ad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089ec260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097774d0>]}
+[0m18:47:29.828984 [debug] [MainThread]: Flushing usage events
+[0m18:47:30.910574 [debug] [MainThread]: An error was encountered while trying to flush usage events
