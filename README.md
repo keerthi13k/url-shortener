@@ -1,4 +1,4 @@
-Now I have everything I need. Let me create the full README:
+🔗 URL Shortener — Production-Grade Cross-Domain System
 
 ```bash
 cat > /Users/keerthi/url-shortener/README.md << 'EOF'
@@ -7,16 +7,6 @@ cat > /Users/keerthi/url-shortener/README.md << 'EOF'
 > A full-stack URL shortener built with **SDE + Data Engineering + DevOps** layers — designed to demonstrate production-level thinking across three engineering domains.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-7.4.0-black) ![PySpark](https://img.shields.io/badge/PySpark-3.5.0-orange) ![dbt](https://img.shields.io/badge/dbt-1.11-red) ![Airflow](https://img.shields.io/badge/Airflow-2.10.4-blue) ![Docker](https://img.shields.io/badge/Docker-Compose-blue)
-
----
-
-## 🌐 Live Demo
-
-| Service | Link |
-|--------|------|
-| 🚀 API (Swagger UI) | _Coming soon — deploying to Railway/Render_ |
-| 📊 Analytics Dashboard | _Coming soon_ |
-| 🔁 Airflow DAG UI | _Coming soon_ |
 
 ---
 
@@ -167,7 +157,7 @@ python pipeline/spark/analytics_processor.py
 
 ### 6. Start Airflow
 ```bash
-export AIRFLOW_HOME=/Users/keerthi/url-shortener/airflow
+export AIRFLOW_HOME=/Users/keerthi/url-shortener/airflow //set AIRFLOW_HOME to your project's airflow directory
 airflow webserver --port 8080 &
 airflow scheduler &
 ```
@@ -225,7 +215,7 @@ Airflow gives retry logic, dependency management, and a UI to monitor pipeline h
 ## 👩‍💻 Author
 
 **Keerthi K**
-[GitHub](https://github.com/keerthi13k) • [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN_HERE)
+[GitHub](https://github.com/keerthi13k) • [LinkedIn](https://www.linkedin.com/in/keerthiperiyasamy/)
 
 ---
 
@@ -237,7 +227,7 @@ Airflow gives retry logic, dependency management, and a UI to monitor pipeline h
 - [ ] Phase 3 — Kubernetes (HPA + rolling deployments)
 - [ ] Phase 3 — GitHub Actions CI/CD
 - [ ] Phase 3 — Grafana + Prometheus monitoring
-- [ ] Phase 4 — Live deployment + interview documentation
+- [ ] Phase 4 — Live deployment + documentation
 EOF
 ```
 
@@ -249,6 +239,3 @@ git commit -m "Add detailed README with architecture, setup guide, and design de
 git push origin main
 ```
 
-After it's pushed, go to your GitHub repo and it'll look incredible. The **Key Design Decisions** section is what makes interviewers stop — it shows you think like a senior engineer, not just a student who followed a tutorial. 🎯
-
-Tell me when it's pushed and I'll tell you what to add for your LinkedIn URL!
