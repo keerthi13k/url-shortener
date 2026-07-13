@@ -244,5 +244,5 @@ K8s gives HPA auto-scaling, rolling deployments with zero downtime, and self-hea
 - [x] Phase 1 — FastAPI + PostgreSQL + Redis + Kafka + WebSockets
 - [x] Phase 2 — PySpark + dbt + Airflow
 - [x] Phase 3 — Docker + Kubernetes + HPA + GitHub Actions CI/CD
-- [ ] Phase 3 — Grafana + Prometheus monitoring
+- [x] Phase 3 — Grafana + Prometheus monitoring
 - [ ] Phase 4 — Live deployment + interview documentation
