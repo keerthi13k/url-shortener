@@ -2,7 +2,9 @@
 
 ```bash
 cat > /Users/keerthi/url-shortener/README.md << 'EOF'
-# 🔗 URL Shortener — Production-Grade Cross-Domain System
+# 🔗 URL Shortener
+
+![CI/CD](https://github.com/keerthi13k/url-shortener/actions/workflows/ci-cd.yml/badge.svg) — Production-Grade Cross-Domain System
 
 > A full-stack URL shortener built with **SDE + Data Engineering + DevOps** layers — designed to demonstrate production-level thinking across three engineering domains.
 
