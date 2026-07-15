@@ -3,17 +3,6 @@
 ![CI/CD](https://github.com/keerthi13k/url-shortener/actions/workflows/ci-cd.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.12-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-7.4.0-black) ![PySpark](https://img.shields.io/badge/PySpark-3.5.0-orange) ![dbt](https://img.shields.io/badge/dbt-1.11-red) ![Airflow](https://img.shields.io/badge/Airflow-2.10.4-blue) ![Docker](https://img.shields.io/badge/Docker-Compose-blue)
 
----
-
-## 🌐 Live Demo
-
-| Service | Link |
-|--------|------|
-| 🚀 API (Swagger UI) | _Coming soon — deploying to Railway/Render_ |
-| 📊 Analytics Dashboard | _Coming soon_ |
-| 🔁 Airflow DAG UI | _Coming soon_ |
-
----
 
 ## 🏗️ Architecture OverviewUser clicks short URL
 │
@@ -245,4 +234,4 @@ K8s gives HPA auto-scaling, rolling deployments with zero downtime, and self-hea
 - [x] Phase 2 — PySpark + dbt + Airflow
 - [x] Phase 3 — Docker + Kubernetes + HPA + GitHub Actions CI/CD
 - [x] Phase 3 — Grafana + Prometheus monitoring
-- [ ] Phase 4 — Live deployment + interview documentation
+
